@@ -34,6 +34,7 @@ def home():
             return jsonify({'message': 'Activity logged successfully'}), 201
         except Exception as error:
             return f"An error occurred: {error}"
+        return "done"
 
 if __name__ == '__main__':
     app.run(debug=False, port=5000)
